@@ -5,20 +5,20 @@ __pycache__/
 # Ignore Jupyter Checkpoints
 .ipynb_checkpoints/
 
-# Ignore Raw Data Folders (Adjust names if yours are different)
+# Ignore Raw Data Folders 
 data/audio/
 data/lyrics/
 data/*.zip
 data/*.mp3
 data/*.wav
 
-# Ignore Large Metadata CSVs (Keep final_data_features.csv though!)
+# Ignore Large Metadata CSVs
 metadata.csv
 *_metadata.csv
 
 # Ignore VS Code Settings
 .vscode/
-
+.gitignore
 # Ignore Virtual Environments
 venv/
 env/
