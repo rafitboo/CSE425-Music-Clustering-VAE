@@ -11,7 +11,7 @@ class MusicDataset(Dataset):
                        Set False for Easy/Medium tasks. Set True for Hard Task.
         """
         self.data = pd.read_csv(csv_file)
-        self.include_label = include_label # <--- The Toggle Switch
+        self.include_label = include_label
         
         self.audio_cols = [c for c in self.data.columns if c.startswith('mfcc_')]
         self.lyric_cols = [c for c in self.data.columns if c.startswith('tfidf_')]
