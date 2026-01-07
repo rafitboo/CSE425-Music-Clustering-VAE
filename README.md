@@ -1,8 +1,10 @@
 
 # Unsupervised Learning: VAE for Hybrid Music Clustering
 
-**Student Name:** MD. Rafiul Islam  
-**Course:** Neural Networks (CSE425)
+**Name:** MD. Rafiul Islam  
+**ID:** 22201842  
+**CSE425 Neural Networks, Section-5**
+
 
 ## 📌 Project Overview
 This project implements a deep generative pipeline to cluster music tracks using **Variational Autoencoders (VAEs)**. It explores the transition from uni-modal (Audio-only) to multi-modal (Audio + Lyrics) learning, culminating in a supervised Conditional VAE (CVAE) approach.
