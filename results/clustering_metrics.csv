@@ -1,0 +1,7 @@
+Task,Model,Algorithm,Silhouette,Davies-Bouldin,ARI,NMI,Purity
+Baseline,PCA,K-Means,0.1389,2.51,0.0,0.0,0.0
+Easy,Basic VAE,K-Means,0.1521,2.401,0.0,0.0,0.0
+Medium,ConvHybrid VAE,K-Means,0.0901,2.644,0.0148,0.0861,0.1552
+Medium,ConvHybrid VAE,Agglomerative,0.0398,2.1751,0.0157,0.0824,0.1579
+Medium,ConvHybrid VAE,DBSCAN,0.2304,4.0505,-0.0004,0.0031,0.1392
+Hard,Conditional VAE,K-Means,0.2238,1.1419,0.0052,0.1461,0.1859

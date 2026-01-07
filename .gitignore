@@ -1,0 +1,24 @@
+# Ignore Python Cache
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Ignore Raw Data Folders (Adjust names if yours are different)
+data/audio/
+data/lyrics/
+data/*.zip
+data/*.mp3
+data/*.wav
+
+# Ignore Large Metadata CSVs (Keep final_data_features.csv though!)
+metadata.csv
+*_metadata.csv
+
+# Ignore VS Code Settings
+.vscode/
+
+# Ignore Virtual Environments
+venv/
+env/
