@@ -15,7 +15,7 @@ EPOCHS = 100
 LATENT_DIM = 8
 N_CLUSTERS = 5 
 
-print("--- STARTING HARD TASK (CVAE + PURITY) ---")
+print("--- STARTING HARD TASK ---")
 
 dataset = MusicDataset(FEATURE_FILE, mode='hybrid', include_label=True)
 dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
