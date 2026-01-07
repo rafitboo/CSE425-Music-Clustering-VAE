@@ -18,7 +18,7 @@ EPOCHS = 100
 LATENT_DIM = 8      
 N_CLUSTERS = 5 
 
-print("--- STARTING EASY TASK (FINAL FIX) ---")
+print("--- STARTING EASY TASK ---")
 
 
 print(f"Loading data from {FEATURE_FILE}...")
