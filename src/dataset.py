@@ -8,7 +8,7 @@ class MusicDataset(Dataset):
         """
         mode: 'audio', 'lyrics', or 'hybrid'
         include_label: If True, returns (features, label). If False, returns (features).
-                       Set False for Easy/Medium tasks. Set True for Hard Task.
+        False for Easy/Medium tasks. Set True for Hard Task.
         """
         self.data = pd.read_csv(csv_file)
         self.include_label = include_label

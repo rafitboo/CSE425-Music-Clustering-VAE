@@ -62,7 +62,7 @@ class ConvHybridVAE(nn.Module):
         x = x.unsqueeze(1) 
         x = F.relu(self.conv1(x))
         x = F.relu(self.conv2(x))
-        x = x.view(x.size(0), -1) # Flatten
+        x = x.view(x.size(0), -1) #Flatten
         
 
         if x.shape[1] != 1024:
