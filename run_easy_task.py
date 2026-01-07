@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
-
+import os
 
 from src.dataset import MusicDataset
 from src.vae import BasicVAE, loss_function
@@ -85,5 +85,6 @@ plt.figure(figsize=(10, 6))
 plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=labels_vae, cmap='viridis', s=5, alpha=0.6)
 plt.title(f"VAE Latent Space Clusters (Silhouette: {sil_vae:.2f})")
 plt.colorbar(label='Cluster ID')
+os.makedirs("results/latent_visualization", exist_ok=True)
 plt.savefig("results/latent_visualization/vae_clusters.png")
 print("Saved plot to results/latent_visualization/vae_clusters.png")

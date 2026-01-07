@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
-
+import os
 
 from src.dataset import MusicDataset
 from src.vae import ConvHybridVAE, loss_function
@@ -81,5 +81,6 @@ plt.figure(figsize=(10, 6))
 plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=pred_k, cmap='coolwarm', s=5, alpha=0.6)
 plt.title(f"Conv-Hybrid VAE Clusters (K-Means)")
 plt.colorbar(label='Cluster')
+os.makedirs("results/latent_visualization", exist_ok=True)
 plt.savefig("results/latent_visualization/hybrid_vae_clusters.png")
 print("Saved plot to results/latent_visualization/hybrid_vae_clusters.png")

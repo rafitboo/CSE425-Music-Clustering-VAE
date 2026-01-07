@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
-
+import os
 from src.dataset import MusicDataset
 from src.vae import ConditionalVAE, loss_function
 from src.evaluation import cluster_and_evaluate
@@ -73,5 +73,6 @@ plt.figure(figsize=(10, 6))
 plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=true_genres, cmap='tab10', s=5, alpha=0.6)
 plt.title(f"CVAE Latent Space (Colored by Genre)\nPurity: {purity:.3f} | NMI: {nmi:.3f}")
 plt.colorbar(label='Genre ID')
+os.makedirs("results/latent_visualization", exist_ok=True)
 plt.savefig("results/latent_visualization/cvae_clusters.png")
 print("Saved plot.")
