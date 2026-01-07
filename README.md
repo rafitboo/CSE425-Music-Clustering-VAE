@@ -17,13 +17,14 @@ The project is divided into three complexity levels:
 ```bash
 git clone [https://github.com/rafitboo/CSE425-Music-Clustering-VAE.git](https://github.com/rafitboo/CSE425-Music-Clustering-VAE.git)
 cd CSE425-Music-Clustering-VAE
+```
 
 
 2. Install Dependencies
 Ensure you have Python installed. Install the required libraries using:
-
+```bash
 pip install -r requirements.txt
-
+```
 3. Data Setup
 Ready-to-Run: The pre-processed feature file final_data_features.csv is included in the root directory. You do not need to download the raw audio files to run the scripts.
 
@@ -34,21 +35,23 @@ You can reproduce the results for each task by running the corresponding script 
 
 1. Run Easy Task (Basic VAE)
 Trains a simple Linear VAE on Audio features and compares it with a PCA baseline.
-
-bash: python run_easy_task.py
-
+```bash
+python run_easy_task.py
+```
 Output: Silhouette Score comparison (VAE vs. PCA) and a latent space plot in results/latent_visualization/.
 
 2. Run Medium Task (Hybrid ConvVAE)
 Trains a Convolutional VAE on Audio + Lyrics. Evaluates clustering using K-Means, Agglomerative Clustering, and DBSCAN.
-
-Bash: python run_medium_task.py
+```bash
+python run_medium_task.py
+```
 Output: Clustering metrics (Silhouette, ARI, NMI) for all 3 algorithms.
 
 3. Run Hard Task (Conditional VAE)
 Trains a Conditional VAE (CVAE) using Genre labels for supervision. Calculates Cluster Purity and NMI.
-
-Bash: python run_hard_task.py
+```bash
+python run_hard_task.py
+```
 Output: High-quality clustering metrics and a genre-colored latent space visualization.
 
 project/
