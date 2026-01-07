@@ -1,5 +1,4 @@
 
-```markdown
 # Unsupervised Learning: VAE for Hybrid Music Clustering
 
 **Student Name:** MD. Rafiul Islam  
@@ -19,7 +18,6 @@ The project is divided into three complexity levels:
 ```bash
 git clone [https://github.com/rafitboo/CSE425-Music-Clustering-VAE.git](https://github.com/rafitboo/CSE425-Music-Clustering-VAE.git)
 cd CSE425-Music-Clustering-VAE
-
 ```
 
 ### 2. Install Dependencies
