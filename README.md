@@ -18,7 +18,7 @@ The project is divided into three complexity levels:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/rafitboo/CSE425-Music-Clustering-VAE.git](https://github.com/rafitboo/CSE425-Music-Clustering-VAE.git)
+git clone https://github.com/rafitboo/CSE425-Music-Clustering-VAE.git
 cd CSE425-Music-Clustering-VAE
 ```
 
