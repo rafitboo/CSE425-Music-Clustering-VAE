@@ -18,7 +18,7 @@ EPOCHS = 80
 LATENT_DIM = 16
 N_CLUSTERS = 5 
 
-print("--- STARTING MEDIUM TASK (CONV HYBRID VAE + MULTI-ALGO) ---")
+print("--- STARTING MEDIUM TASK ---")
 
 
 dataset = MusicDataset(FEATURE_FILE, mode='hybrid', include_label=True) 
