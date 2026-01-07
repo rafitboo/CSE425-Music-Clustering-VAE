@@ -104,15 +104,16 @@ project/
 
 ## 📊 Key Results Summary
 
-| Task | Model | Modality | Best Silhouette | Best NMI | Cluster Purity |
-| --- | --- | --- | --- | --- | --- |
-| **Baseline** | PCA + K-Means | Audio | 0.1389 | - | - |
-| **Easy** | Basic VAE | Audio | 0.1553 | - | - |
-| **Medium** | ConvHybrid VAE | Audio + Lyrics | 0.2292 (DBSCAN) | 0.0849 | 0.1562 |
-| **Hard** | **Conditional VAE** | **Hybrid + Genre** | **0.2196** | **0.1464** | **0.1821** |
+| Task | Model | Algorithm | Silhouette | Davies-Bouldin ↓ | ARI | NMI | Purity |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Baseline** | PCA | K-Means | 0.1389 | 2.5100 | 0.0 | 0.0 | 0.0 |
+| **Easy** | Basic VAE | K-Means | 0.1553 | 2.4010 | 0.0 | 0.0 | 0.0 |
+| **Medium** | ConvHybrid VAE | K-Means | 0.0930 | 2.5810 | 0.0149 | 0.0849 | 0.1562 |
+| **Medium** | ConvHybrid VAE | Agglomerative | 0.0738 | 2.5120 | **0.0167** | 0.0783 | 0.1557 |
+| **Medium** | ConvHybrid VAE | DBSCAN | **0.2292** | 3.5470 | -0.0002 | 0.0036 | 0.1392 |
+| **Hard** | **Conditional VAE** | **K-Means** | 0.2196 | **1.1650** | 0.0049 | **0.1464** | **0.1821** |
 
-*The Conditional VAE achieved the most semantically meaningful clusters, as evidenced by the highest Purity and NMI scores.*
-
+*Note: For Davies-Bouldin, lower values indicate better clustering. The Hard Task (CVAE) achieved the best structural separation (lowest DB score) and the highest semantic accuracy (Purity & NMI).*
 ## 📜 References
 
 * **MTG-Jamendo Dataset:** Audio tracks.
